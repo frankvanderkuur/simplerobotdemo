@@ -10,3 +10,5 @@ Perform simple search on google
     press key  id:lst-ib  \\13
     wait until page contains  resultaten
     click link  link:Afbeeldingen
+    sleep  5s
+    close browser
