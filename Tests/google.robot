@@ -1,9 +1,12 @@
 *** Settings ***
 Library  SeleniumLibrary
 
+*** Variables ***
+${BROWSER}  chrome
+
 *** Test Cases ***
 Perform simple search on google
-    open browser  about:blank  chrome
+    open browser  about:blank  ${BROWSER}
     maximize browser window
     go to  https://www.google.com
     input text  id:lst-ib  Yamaha FJR 1300 Dark Blue
